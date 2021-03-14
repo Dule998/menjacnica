@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Menjačnica</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="header">
+	            
+		            <div id="logo-i-social">
+			            <div id="logo-holder">
+				          <img src="images/logo.jpg"alt="Logo">
+			            </div>
+			        <div id="social-holder">
+				       <h1>AMG Menjačnica</h1>
+			       </div>
+		       
+		       </div>
+	          </div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid pocetna">
+	<div class="row">
+		<div class="col-md-4 offset-md-1">
+			<h2 class="text-center odvoji">Menjačnica</h2>
+          <div class="forma1">
+          	<label>Iznos:</label>
+         <div class="form-group poz">
+         <input type="number" class="form-control" id="unetiIznos" placeholder="Unesite iznos">
+            <select id="selektor1"> 
+            <option value="2">DIN</option>
+            <option value="1">EUR</option>
+            <option value="3">USD</option>
+            <option value="4">CHF</option>
+            <option value="5">AUD</option>
+            </select>
+          </div>
+          <label>Rezultat:</label>
+         <div class="form-group poz">
+         <p class="form-control" id="rezultat">0</p>
+            <select id="selektor2"> 
+            <option value="1">EUR</option>
+            <option value="2">DIN</option>
+            <option value="3">USD</option>
+            <option value="4">CHF</option>
+            <option value="5">AUD</option>
+            </select>
+          </div>
+          <button onclick="Racunaj();" class="btn btn-primary">Konvertuj</button> 
+</div>
+		</div>
+
+
+
+		<div class="col-md-4 offset-md-2">
+			<h2 class="text-center odvoji">Kursna Lista</h2>
+			
+         <table class="table forma1">
+  <thead>
+    <tr>
+      <th scope="col">Valuta</th>
+      <th scope="col">Kupovni</th>
+      <th scope="col">Prodajni</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/eu.png">EUR</td>
+      <td class="q">177,00</td>
+      <td>118,50</td>
+    </tr>
+    <tr>
+      <td><img src="images/sad.png">USD</td>
+      <td>94,25</td>
+      <td>97,95</td>
+    </tr>
+    <tr>
+      <td><img src="images/chf.png">CHF</td>
+      <td>105,40</td>
+      <td>109,65</td>
+    </tr>
+    <tr>
+      <td><img src="images/kanada.png">CAD</td>
+      <td>73,11</td>
+      <td>76,41</td>
+    </tr>
+    <tr>
+      <td><img src="images/rus.png">RUB</td>
+      <td>1,18</td>
+      <td>1,33</td>
+    </tr>
+    <tr>
+      <td><img src="images/hr.png">HRK</td>
+      <td>15,07</td>
+      <td>15,82</td>
+    </tr>
+    <tr>
+      <td><img src="images/bih.png">BAM</td>
+      <td>58,61</td>
+      <td>60,51</td>
+    </tr>
+  </tbody>
+</table>
+
+
+		</div>
+
+	</div>
+<footer class="page-footer fut">
+        <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:AMG Menjačnica     </div>
+ </footer>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
